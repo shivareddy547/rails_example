@@ -28,6 +28,7 @@ GEM
     activesupport (3.2.11)
       i18n (~> 0.6)
       multi_json (~> 1.0)
+    addressable (2.3.6)
     arel (3.0.3)
     atomic (1.1.14)
     bcrypt-ruby (3.1.2)
@@ -46,10 +47,20 @@ GEM
       thread_safe (~> 0.1)
       warden (~> 1.2.3)
     erubis (2.7.0)
+    excon (0.33.0)
     execjs (2.0.2)
     faraday (0.9.0)
       multipart-post (>= 1.2, < 3)
     hashie (2.0.5)
+    heroku (3.8.0)
+      heroku-api (~> 0.3.17)
+      launchy (>= 0.3.2)
+      netrc (~> 0.7.7)
+      rest-client (~> 1.6.1)
+      rubyzip
+    heroku-api (0.3.18)
+      excon (~> 0.27)
+      multi_json (~> 1.8)
     hike (1.2.3)
     i18n (0.6.9)
     journey (1.0.4)
@@ -59,6 +70,8 @@ GEM
     json (1.8.1)
     jwt (0.1.11)
       multi_json (>= 1.5)
+    launchy (2.4.2)
+      addressable (~> 2.3)
     libv8 (3.16.14.3)
     mail (2.4.4)
       i18n (>= 0.4.0)
@@ -69,6 +82,7 @@ GEM
     multi_xml (0.5.5)
     multipart-post (2.0.0)
     mysql2 (0.3.15)
+    netrc (0.7.7)
     oauth (0.4.7)
     oauth2 (0.9.3)
       faraday (>= 0.8, < 0.10)
@@ -120,6 +134,9 @@ GEM
     rdoc (3.12.2)
       json (~> 1.4)
     ref (1.0.5)
+    rest-client (1.6.7)
+      mime-types (>= 1.16)
+    rubyzip (1.1.3)
     sass (3.2.14)
     sass-rails (3.2.6)
       railties (~> 3.2.0)
@@ -154,6 +171,7 @@ DEPENDENCIES
   coffee-rails (~> 3.2.1)
   devise
   execjs
+  heroku
   jquery-rails
   mysql2
   omniauth
